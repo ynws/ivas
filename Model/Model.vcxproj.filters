@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\GamePhase">
+      <UniqueIdentifier>{4db3ea3a-e005-4943-aa4e-4d6616f8bf73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GamePhase">
+      <UniqueIdentifier>{6aa43532-fadb-4bde-a77e-a0153f3574f6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -21,10 +27,25 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GamePhase.h">
+      <Filter>Header Files\GamePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="MainTitle.h">
+      <Filter>Header Files\GamePhase</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainTitle.cpp">
+      <Filter>Source Files\GamePhase</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

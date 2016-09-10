@@ -1,4 +1,4 @@
-// stdafx.cpp : 標準インクルード MAIN.pch のみを
+// stdafx.cpp : 標準インクルード MainDxlib.pch のみを
 // 含むソース ファイルは、プリコンパイル済みヘッダーになります。
 // stdafx.obj にはプリコンパイル済み型情報が含まれます。
 
