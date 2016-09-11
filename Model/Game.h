@@ -5,13 +5,10 @@ class Game
 {
 private:
 	std::unique_ptr<GamePhase> game_phase;
-	int count;
-	void ChangePhase();
 public:
 	Game();
 	~Game();
-
-	bool Update();
-	int GetCount() const { return count; }
+	GamePhase* GetGamePhase() const { return game_phase.get(); }
+	bool ChangePhase();
 };
 

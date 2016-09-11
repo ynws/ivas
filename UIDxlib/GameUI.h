@@ -1,11 +1,16 @@
 #pragma once
 #include "..\Model\Game.h"
+#include "GamePhaseUI.h"
 class GameUI
 {
 private:
-	void DrawMainWindow(const Game* game);
+	std::unique_ptr<GamePhaseUI> game_phase_UI;
 public:
-	GameUI();
+	GameUI(GamePhaseUI* game_phase_UI);
 	~GameUI();
-	bool Refresh(const Game* game);
+	bool Refresh() const;
+	void Draw() const;
+	void CheckInput(Game* game) const;
+
+	void ResetGamePhaseUI(GamePhaseUI* game_phase_UI);
 };

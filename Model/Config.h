@@ -1,12 +1,12 @@
 #pragma once
 #include "GamePhase.h"
-class MainTitle :
+class Config :
 	public GamePhase
 {
 public:
-	MainTitle();
-	~MainTitle();
+	Config();
+	~Config();
 
-	void GotoConfig();
+	void GotoMainTitle();
 };
 

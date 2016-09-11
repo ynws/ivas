@@ -1,17 +1,16 @@
 #include "stdafx.h"
 #include "MainTitle.h"
-
+#include "Config.h"
 
 MainTitle::MainTitle()
 {
 }
 
-
 MainTitle::~MainTitle()
 {
 }
 
-GamePhase * MainTitle::GetNextGamePhase()
+void MainTitle::GotoConfig()
 {
-	return nullptr;
+	next_phase = new Config();
 }

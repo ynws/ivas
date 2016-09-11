@@ -36,6 +36,9 @@
     <ClInclude Include="MainTitle.h">
       <Filter>Header Files\GamePhase</Filter>
     </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files\GamePhase</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -45,6 +48,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MainTitle.cpp">
+      <Filter>Source Files\GamePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
       <Filter>Source Files\GamePhase</Filter>
     </ClCompile>
   </ItemGroup>

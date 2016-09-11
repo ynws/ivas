@@ -1,9 +1,15 @@
 #include "stdafx.h"
 #include "..\Model\\Game.h"
+#include "..\Model\\MainTitle.h"
 
-TEST(GameTest, getText) {
+TEST(GameTest, Initialize) {
 	std::unique_ptr<Game> game(new Game());
-	EXPECT_EQ(0, game->GetCount());
-	ASSERT_TRUE(game->Update());
-	EXPECT_EQ(1, game->GetCount());
+	ASSERT_EQ(game->GetGamePhase()->GetNextGamePhase(), nullptr);
+}
+
+TEST(GameTest, ChanegePhase) {
+	std::unique_ptr<Game> game(new Game());
+	ASSERT_FALSE(game->ChangePhase());
+	((MainTitle*)game->GetGamePhase())->GotoConfig();
+	ASSERT_TRUE(game->ChangePhase());
 }

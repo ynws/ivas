@@ -1,8 +1,11 @@
 #pragma once
 class GamePhase
 {
+protected:
+	GamePhase* next_phase;
 public:
+	GamePhase() : next_phase(nullptr) {}
 	virtual ~GamePhase() {};
-	virtual GamePhase* GetNextGamePhase() = 0;
+	GamePhase* GetNextGamePhase() const { return next_phase; }
 };
 
