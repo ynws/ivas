@@ -10,7 +10,7 @@ public:
 	~GameUI();
 	bool Refresh() const;
 	void Draw() const;
-	void CheckInput(Game* game) const;
+	void CheckInput() const;
 
 	void ResetGamePhaseUI(GamePhaseUI* game_phase_UI);
 };

@@ -14,7 +14,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
 	while (gameUI->Refresh()) {
 		gameUI->Draw();
-		gameUI->CheckInput(game.get());
+		gameUI->CheckInput();
 		if (game->ChangePhase()) {
 			gameUI->ResetGamePhaseUI(GamePhaseUI::GamePhaseUIFactory(game->GetGamePhase()));
 		}

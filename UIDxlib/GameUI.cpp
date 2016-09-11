@@ -37,8 +37,8 @@ void GameUI::Draw() const
 	game_phase_UI->Draw();
 }
 
-void GameUI::CheckInput(Game* game) const
+void GameUI::CheckInput() const
 {
-	game_phase_UI->CheckInput(game->GetGamePhase());
+	game_phase_UI->CheckInput();
 }
 
