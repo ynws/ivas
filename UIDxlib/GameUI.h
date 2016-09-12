@@ -6,7 +6,7 @@ class GameUI
 private:
 	std::unique_ptr<GamePhaseUI> game_phase_UI;
 public:
-	GameUI(GamePhaseUI* game_phase_UI);
+	GameUI();
 	~GameUI();
 	bool Refresh() const;
 	void Draw() const;

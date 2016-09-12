@@ -1,17 +1,17 @@
 ﻿#include "stdafx.h"
 #include "GameUI.h"
 #include "Mouse.h"
+#include "UIConst.h"
 
-GameUI::GameUI(GamePhaseUI* game_phase_UI)
+GameUI::GameUI()
 {
 	SetOutApplicationLogValidFlag(false);
 	ChangeWindowMode(true);
+	SetGraphMode(DISPSIZE_X, DISPSIZE_Y, 16);
 	SetBackgroundColor(255, 255, 255);
 	SetAlwaysRunFlag(true);
 	DxLib_Init();
 	SetDrawScreen(DX_SCREEN_BACK);
-
-	this->ResetGamePhaseUI(game_phase_UI);
 }
 
 GameUI::~GameUI()

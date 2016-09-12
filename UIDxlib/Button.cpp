@@ -23,7 +23,7 @@ bool Button::IsMouseOn()
 ////////////////////////////////////////////////////////////////////////////////
 void TextButton::Draw()
 {
-	double ex_rate = IsMouseOn() ? 1.05 : 1.0;
+	double ex_rate = IsMouseOn() ? 0.05 : 0.0;
 	int dx = (int)(w * ex_rate);
 	int dy = (int)(h * ex_rate);
 	RoundRect::DrawRoundBoxLabel(x - dx, y - dy, w + dx * 2, h + dy * 2, base_col, text_col, text);
@@ -50,7 +50,7 @@ GraphicButton::~GraphicButton()
 
 void GraphicButton::Draw()
 {
-	double ex_rate = IsMouseOn() ? 1.05 : 1.0;
+	double ex_rate = IsMouseOn() ? 0.05 : 0.0;
 	int dx = (int)(w * ex_rate);
 	int dy = (int)(h * ex_rate);
 	DrawExtendGraph(x - dx, y - dy, x + w + dx, y + h + dy, image, true);

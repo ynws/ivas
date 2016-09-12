@@ -9,3 +9,6 @@ Log.txt
 *.user
 *.db
 *.opendb
+
+*.jpg
+*.png

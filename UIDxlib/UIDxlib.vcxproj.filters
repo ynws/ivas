@@ -57,8 +57,11 @@
     <ClInclude Include="RoundRect.h">
       <Filter>Header Files\CommonParts</Filter>
     </ClInclude>
+    <ClInclude Include="UIConst.h">
+      <Filter>Header Files\CommonParts</Filter>
+    </ClInclude>
     <ClInclude Include="FontManager.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\CommonParts</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -87,7 +90,7 @@
       <Filter>Source Files\CommonParts</Filter>
     </ClCompile>
     <ClCompile Include="FontManager.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\CommonParts</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

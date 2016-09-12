@@ -6,7 +6,7 @@
 */
 class FontManager {
 private:
-	FontManager();
+	FontManager() {};
 	~FontManager();
 	FontManager(const FontManager& r) {};
 	FontManager& operator=(const FontManager& r) {};

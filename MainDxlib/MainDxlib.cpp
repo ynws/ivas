@@ -10,7 +10,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_ int       nCmdShow)
 {
 	std::unique_ptr<Game> game(new Game());
-	std::unique_ptr<GameUI> gameUI(new GameUI(GamePhaseUI::GamePhaseUIFactory(game->GetGamePhase())));
+	std::unique_ptr<GameUI> gameUI(new GameUI());
+	gameUI->ResetGamePhaseUI(GamePhaseUI::GamePhaseUIFactory(game->GetGamePhase()));
 
 	while (gameUI->Refresh()) {
 		gameUI->Draw();
