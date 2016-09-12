@@ -1,4 +1,4 @@
-#include "stdafx.h"
+﻿#include "stdafx.h"
 #include "ConfigUI.h"
 
 ConfigUI::ConfigUI(Config* config) : config(config)

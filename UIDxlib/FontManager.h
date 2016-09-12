@@ -1,8 +1,8 @@
-#pragma once
+ï»¿#pragma once
 #include <map>
 /*
-* ƒtƒHƒ“ƒgŠÇ—
-* ƒVƒ“ƒOƒ‹ƒgƒ“
+* ãƒ•ã‚©ãƒ³ãƒˆç®¡ç†
+* ã‚·ãƒ³ã‚°ãƒ«ãƒˆãƒ³
 */
 class FontManager {
 private:

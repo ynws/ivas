@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "GamePhase.h"
 class Config :
 	public GamePhase

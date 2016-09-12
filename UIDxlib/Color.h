@@ -1,4 +1,4 @@
-#pragma once
+Ôªø#pragma once
 enum Color {
 	// -- BASE COLOR -- //
 	BLACK = 0xff000000,
@@ -7,7 +7,7 @@ enum Color {
 	LGRAY = 0xffeeeeee,
 	WHITE = 0xffffffff,
 	BLUE = 0xff0000ff,
-	AQUA = 0xff0080ff,	// å©Ç…Ç≠Ç¢ÇÃÇ≈RGBí≤êÆ
+	AQUA = 0xff0080ff,	// Ë¶ã„Å´„Åè„ÅÑ„ÅÆ„ÅßRGBË™øÊï¥
 	YELLOW = 0xffFCBE27,
 	RED = 0xffff0000,
 	PURPLE = 0xff8000ff,

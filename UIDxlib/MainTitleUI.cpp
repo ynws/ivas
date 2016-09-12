@@ -1,4 +1,4 @@
-#include "stdafx.h"
+﻿#include "stdafx.h"
 #include "MainTitleUI.h"
 
 MainTitleUI::MainTitleUI(MainTitle* main_title) : main_title(main_title)

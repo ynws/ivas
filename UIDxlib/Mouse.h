@@ -1,11 +1,11 @@
-#pragma once
+ï»¿#pragma once
 /*
-* ƒ}ƒEƒXŠÖŒWƒNƒ‰ƒX
-* ƒVƒ“ƒOƒ‹ƒgƒ“
+* ãƒã‚¦ã‚¹é–¢ä¿‚ã‚¯ãƒ©ã‚¹
+* ã‚·ãƒ³ã‚°ãƒ«ãƒˆãƒ³
 */
 class Mouse {
 private:
-	int x, y, left, right;    //ƒ}ƒEƒXî•ñ
+	int x, y, left, right;    //ãƒã‚¦ã‚¹æƒ…å ±
 	int old_x, old_y;
 	Mouse() { Refresh(); };
 	Mouse(const Mouse& r) {};

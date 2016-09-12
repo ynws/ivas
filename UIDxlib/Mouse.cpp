@@ -1,4 +1,4 @@
-#include "stdafx.h"
+ï»¿#include "stdafx.h"
 #include "Mouse.h"
 
 void Mouse::Refresh()
@@ -6,7 +6,7 @@ void Mouse::Refresh()
 	old_x = x;
 	old_y = y;
 	GetMousePoint(&x, &y);
-	// TODO: ‰æ–Ê‚ÌŠg‘åk¬‘Î‰
+	// TODO: ç”»é¢ã®æ‹¡å¤§ç¸®å°å¯¾å¿œ
 
 	int mouse_input = GetMouseInput();
 	if ((mouse_input & MOUSE_INPUT_LEFT) != 0) {

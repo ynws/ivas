@@ -1,4 +1,4 @@
-#include "stdafx.h"
+Ôªø#include "stdafx.h"
 #include "FontManager.h"
 
 FontManager::~FontManager() {
@@ -10,9 +10,9 @@ FontManager::~FontManager() {
 }
 
 int FontManager::GetFont(int size) {
-	// ñ≥Ç¢Ç»ÇÁçÏÇÈ
+	// ÁÑ°„ÅÑ„Å™„Çâ‰Ωú„Çã
 	if (font.count(size) == 0) {
-		font[size] = CreateFontToHandle("ÇlÇr ÉSÉVÉbÉN", size, 1, DX_FONTTYPE_ANTIALIASING);
+		font[size] = CreateFontToHandle("Ôº≠Ôº≥ „Ç¥„Ç∑„ÉÉ„ÇØ", size, 1, DX_FONTTYPE_ANTIALIASING);
 	}
 	return font[size];
 }

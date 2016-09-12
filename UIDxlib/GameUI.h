@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "..\Model\Game.h"
 #include "GamePhaseUI.h"
 class GameUI
