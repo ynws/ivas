@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "GameUI.h"
+#include "Mouse.h"
 
 GameUI::GameUI(GamePhaseUI* game_phase_UI)
 {
@@ -29,6 +30,9 @@ bool GameUI::Refresh() const
 	if (ProcessMessage() != 0)return false;
 	if (ClearDrawScreen() != 0)return false;
 	if (CheckHitKey(KEY_INPUT_ESCAPE) != 0)return false;
+
+	Mouse::Instance()->Refresh();
+
 	return true;
 }
 

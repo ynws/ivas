@@ -19,6 +19,12 @@
     <Filter Include="Source Files\GamePhase">
       <UniqueIdentifier>{8c9d02ea-f798-4dad-810d-ccadf5907906}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\CommonParts">
+      <UniqueIdentifier>{d45bd955-cb4f-46d3-8e56-a25519bb6b3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CommonParts">
+      <UniqueIdentifier>{fcce3db9-c4c0-4a5c-bd1a-498a689a6f28}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -39,6 +45,21 @@
     <ClInclude Include="ConfigUI.h">
       <Filter>Header Files\GamePhase</Filter>
     </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Header Files\CommonParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Header Files\CommonParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>Header Files\CommonParts</Filter>
+    </ClInclude>
+    <ClInclude Include="RoundRect.h">
+      <Filter>Header Files\CommonParts</Filter>
+    </ClInclude>
+    <ClInclude Include="FontManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -55,6 +76,18 @@
     </ClCompile>
     <ClCompile Include="ConfigUI.cpp">
       <Filter>Source Files\GamePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Source Files\CommonParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>Source Files\CommonParts</Filter>
+    </ClCompile>
+    <ClCompile Include="RoundRect.cpp">
+      <Filter>Source Files\CommonParts</Filter>
+    </ClCompile>
+    <ClCompile Include="FontManager.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
