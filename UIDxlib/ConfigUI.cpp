@@ -1,21 +1,19 @@
 ﻿#include "stdafx.h"
 #include "ConfigUI.h"
 
-ConfigUI::ConfigUI(Config* config) : config(config)
+ConfigUI::ConfigUI(Config* config) : GamePhaseUI("data\\bg\\main_title.jpg"), config(config)
 {
-	back_ground_image = LoadGraph("data\\bg\\main_title.jpg");
 	goto_title_button = new TextButton(54*16, 0, 10*16, 3*16, "TOP", Color::P_BLUE, Color::WHITE);
 }
 
 ConfigUI::~ConfigUI()
 {
-	DeleteGraph(back_ground_image);
 	delete goto_title_button;
 }
 
 void ConfigUI::Draw() const
 {
-	DrawGraph(0, 0, back_ground_image, false);
+	GamePhaseUI::Draw();
 	goto_title_button->Draw();
 }
 

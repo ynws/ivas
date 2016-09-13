@@ -155,9 +155,16 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BattleSelectTest.cpp" />
+    <ClCompile Include="BattleTest.cpp" />
     <ClCompile Include="ConfigTest.cpp" />
+    <ClCompile Include="DeckEditTest.cpp" />
+    <ClCompile Include="DeckSelectTest.cpp" />
     <ClCompile Include="GameTest.cpp" />
     <ClCompile Include="MainTitleTest.cpp" />
+    <ClCompile Include="OfficeSelectTest.cpp" />
+    <ClCompile Include="OnlineLobbyTest.cpp" />
+    <ClCompile Include="ReplayMenuTest.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

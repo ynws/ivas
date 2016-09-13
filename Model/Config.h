@@ -6,7 +6,5 @@ class Config :
 public:
 	Config();
 	~Config();
-
-	void GotoMainTitle();
 };
 

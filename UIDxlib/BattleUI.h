@@ -1,16 +1,16 @@
-﻿#pragma once
+#pragma once
 #include "GamePhaseUI.h"
 #include "Button.h"
-#include "..\Model\Config.h"
-class ConfigUI :
+#include "..\Model\Battle.h"
+class BattleUI :
 	public GamePhaseUI
 {
 private:
-	Config *config;
-	Button* goto_title_button;
+	Battle *battle;
+	Button* goto_battle_select_button;
 public:
-	ConfigUI(Config* config);
-	~ConfigUI();
+	BattleUI(Battle *battle);
+	~BattleUI();
 
 	void Draw() const override;
 	void CheckInput() const override;

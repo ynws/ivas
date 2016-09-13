@@ -63,6 +63,27 @@
     <ClInclude Include="FontManager.h">
       <Filter>Header Files\CommonParts</Filter>
     </ClInclude>
+    <ClInclude Include="ReplayMenuUI.h">
+      <Filter>Header Files\GamePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="OfficeSelectUI.h">
+      <Filter>Header Files\GamePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="DeckSelectUI.h">
+      <Filter>Header Files\GamePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleSelectUI.h">
+      <Filter>Header Files\GamePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="DeckEditUI.h">
+      <Filter>Header Files\GamePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="OnlineLobbyUI.h">
+      <Filter>Header Files\GamePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleUI.h">
+      <Filter>Header Files\GamePhase</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -91,6 +112,27 @@
     </ClCompile>
     <ClCompile Include="FontManager.cpp">
       <Filter>Source Files\CommonParts</Filter>
+    </ClCompile>
+    <ClCompile Include="ReplayMenuUI.cpp">
+      <Filter>Source Files\GamePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="OfficeSelectUI.cpp">
+      <Filter>Source Files\GamePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="DeckSelectUI.cpp">
+      <Filter>Source Files\GamePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleSelectUI.cpp">
+      <Filter>Source Files\GamePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="DeckEditUI.cpp">
+      <Filter>Source Files\GamePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="OnlineLobbyUI.cpp">
+      <Filter>Source Files\GamePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleUI.cpp">
+      <Filter>Source Files\GamePhase</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

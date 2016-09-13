@@ -39,6 +39,27 @@
     <ClInclude Include="Config.h">
       <Filter>Header Files\GamePhase</Filter>
     </ClInclude>
+    <ClInclude Include="ReplayMenu.h">
+      <Filter>Header Files\GamePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="OfficeSelect.h">
+      <Filter>Header Files\GamePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="DeckSelect.h">
+      <Filter>Header Files\GamePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="DeckEdit.h">
+      <Filter>Header Files\GamePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleSelect.h">
+      <Filter>Header Files\GamePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="OnlineLobby.h">
+      <Filter>Header Files\GamePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="Battle.h">
+      <Filter>Header Files\GamePhase</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -52,6 +73,30 @@
     </ClCompile>
     <ClCompile Include="Config.cpp">
       <Filter>Source Files\GamePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="ReplayMenu.cpp">
+      <Filter>Source Files\GamePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="OfficeSelect.cpp">
+      <Filter>Source Files\GamePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="DeckSelect.cpp">
+      <Filter>Source Files\GamePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="DeckEdit.cpp">
+      <Filter>Source Files\GamePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleSelect.cpp">
+      <Filter>Source Files\GamePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePhase.cpp">
+      <Filter>Source Files\GamePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="OnlineLobby.cpp">
+      <Filter>Source Files\GamePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="Battle.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,16 +1,16 @@
-﻿#pragma once
+#pragma once
 #include "GamePhaseUI.h"
 #include "Button.h"
-#include "..\Model\Config.h"
-class ConfigUI :
+#include "..\Model\ReplayMenu.h"
+class ReplayMenuUI :
 	public GamePhaseUI
 {
 private:
-	Config *config;
+	ReplayMenu *replay_menu;
 	Button* goto_title_button;
 public:
-	ConfigUI(Config* config);
-	~ConfigUI();
+	ReplayMenuUI(ReplayMenu* replay_menu);
+	~ReplayMenuUI();
 
 	void Draw() const override;
 	void CheckInput() const override;

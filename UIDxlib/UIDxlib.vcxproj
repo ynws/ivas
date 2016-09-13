@@ -131,27 +131,41 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BattleSelectUI.h" />
+    <ClInclude Include="BattleUI.h" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="ConfigUI.h" />
+    <ClInclude Include="DeckEditUI.h" />
+    <ClInclude Include="DeckSelectUI.h" />
     <ClInclude Include="FontManager.h" />
     <ClInclude Include="GamePhaseUI.h" />
     <ClInclude Include="GameUI.h" />
     <ClInclude Include="Color.h" />
     <ClInclude Include="MainTitleUI.h" />
     <ClInclude Include="Mouse.h" />
+    <ClInclude Include="OfficeSelectUI.h" />
+    <ClInclude Include="OnlineLobbyUI.h" />
+    <ClInclude Include="ReplayMenuUI.h" />
     <ClInclude Include="RoundRect.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="UIConst.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BattleSelectUI.cpp" />
+    <ClCompile Include="BattleUI.cpp" />
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="ConfigUI.cpp" />
+    <ClCompile Include="DeckEditUI.cpp" />
+    <ClCompile Include="DeckSelectUI.cpp" />
     <ClCompile Include="FontManager.cpp" />
     <ClCompile Include="GamePhaseUI.cpp" />
     <ClCompile Include="GameUI.cpp" />
     <ClCompile Include="MainTitleUI.cpp" />
     <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="OfficeSelectUI.cpp" />
+    <ClCompile Include="OnlineLobbyUI.cpp" />
+    <ClCompile Include="ReplayMenuUI.cpp" />
     <ClCompile Include="RoundRect.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

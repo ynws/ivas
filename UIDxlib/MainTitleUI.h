@@ -7,7 +7,6 @@ class MainTitleUI :
 {
 private:
 	MainTitle* main_title;
-	int back_ground_img;
 	int title_logo;
 	int title_width;
 

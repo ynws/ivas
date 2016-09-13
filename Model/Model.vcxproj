@@ -130,17 +130,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Battle.h" />
+    <ClInclude Include="BattleSelect.h" />
     <ClInclude Include="Config.h" />
+    <ClInclude Include="DeckEdit.h" />
+    <ClInclude Include="DeckSelect.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GamePhase.h" />
     <ClInclude Include="MainTitle.h" />
+    <ClInclude Include="OfficeSelect.h" />
+    <ClInclude Include="OnlineLobby.h" />
+    <ClInclude Include="ReplayMenu.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Battle.cpp" />
+    <ClCompile Include="BattleSelect.cpp" />
     <ClCompile Include="Config.cpp" />
+    <ClCompile Include="DeckEdit.cpp" />
+    <ClCompile Include="DeckSelect.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GamePhase.cpp" />
     <ClCompile Include="MainTitle.cpp" />
+    <ClCompile Include="OfficeSelect.cpp" />
+    <ClCompile Include="OnlineLobby.cpp" />
+    <ClCompile Include="ReplayMenu.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

@@ -1,6 +1,15 @@
 ﻿#include "stdafx.h"
 #include "MainTitle.h"
+
+#include "OfficeSelect.h"
+#include "DeckSelect.h"
+#include "ReplayMenu.h"
 #include "Config.h"
+#include "OnlineLobby.h"
+
+#include <string>
+#include <windows.h>
+#include <Shellapi.h>
 
 MainTitle::MainTitle()
 {
@@ -14,23 +23,23 @@ void MainTitle::GotoOfficeSelect()
 {
 	// TODO: 初回はシナリオ
 	// TODO: 事務所選択済みなら対戦選択へ
-	// next_phase = new OfficeSelect();
+	next_phase = new OfficeSelect();
 }
 
 void MainTitle::GotoDeckSelect()
 {
-	// next_phase = new DeckSelect();
+	next_phase = new DeckSelect();
 }
 
 void MainTitle::GotoOnline()
 {
 	// TODO: 接続処理
-	// next_phase = new OnlineLobby();
+	next_phase = new OnlineLobby();
 }
 
 void MainTitle::GotoReplay()
 {
-	// next_phase = new ReplayMenu();
+	next_phase = new ReplayMenu();
 }
 
 void MainTitle::GotoConfig()
@@ -40,5 +49,7 @@ void MainTitle::GotoConfig()
 
 void MainTitle::TweetForm()
 {
-	// TODO: impl
+	ShellExecute(GetDesktopWindow(), "open",
+		"https://twitter.com/intent/tweet?screen_name=IDOLVERSUS_PC",
+		"", "", SW_SHOW);
 }

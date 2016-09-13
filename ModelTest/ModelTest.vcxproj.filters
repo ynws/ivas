@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\GamePhaseTest">
+      <UniqueIdentifier>{42a64ce4-1800-4e3b-9d32-d447d63585a6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -26,14 +29,35 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GameTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MainTitleTest.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="BattleSelectTest.cpp">
+      <Filter>Source Files\GamePhaseTest</Filter>
     </ClCompile>
     <ClCompile Include="ConfigTest.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\GamePhaseTest</Filter>
+    </ClCompile>
+    <ClCompile Include="DeckEditTest.cpp">
+      <Filter>Source Files\GamePhaseTest</Filter>
+    </ClCompile>
+    <ClCompile Include="DeckSelectTest.cpp">
+      <Filter>Source Files\GamePhaseTest</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTest.cpp">
+      <Filter>Source Files\GamePhaseTest</Filter>
+    </ClCompile>
+    <ClCompile Include="MainTitleTest.cpp">
+      <Filter>Source Files\GamePhaseTest</Filter>
+    </ClCompile>
+    <ClCompile Include="OfficeSelectTest.cpp">
+      <Filter>Source Files\GamePhaseTest</Filter>
+    </ClCompile>
+    <ClCompile Include="ReplayMenuTest.cpp">
+      <Filter>Source Files\GamePhaseTest</Filter>
+    </ClCompile>
+    <ClCompile Include="OnlineLobbyTest.cpp">
+      <Filter>Source Files\GamePhaseTest</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleTest.cpp">
+      <Filter>Source Files\GamePhaseTest</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

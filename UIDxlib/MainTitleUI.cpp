@@ -2,9 +2,8 @@
 #include "MainTitleUI.h"
 #include "UIConst.h"
 
-MainTitleUI::MainTitleUI(MainTitle* main_title) : main_title(main_title)
+MainTitleUI::MainTitleUI(MainTitle* main_title) : GamePhaseUI("data\\bg\\main_title.jpg"), main_title(main_title)
 {
-	back_ground_img = LoadGraph("data\\bg\\main_title.jpg");
 	title_logo = LoadGraph("data\\gra\\title_logo.png");
 	int buf;
 	GetGraphSize(title_logo, &title_width, &buf);
@@ -19,7 +18,6 @@ MainTitleUI::MainTitleUI(MainTitle* main_title) : main_title(main_title)
 
 MainTitleUI::~MainTitleUI()
 {
-	DeleteGraph(back_ground_img);
 	DeleteGraph(title_logo);
 	for (int i = 0; i < ButtonType::BUTTON_NUM; i++) {
 		delete button[i];
@@ -28,11 +26,9 @@ MainTitleUI::~MainTitleUI()
 
 void MainTitleUI::Draw() const
 {
-	// 背景とロゴ
-	DrawGraph(0, 0, back_ground_img, FALSE);
+	GamePhaseUI::Draw();
 	DrawGraph((DISPSIZE_X - title_width) / 2, 9 * 16, title_logo, TRUE);
 
-	// 各種ボタン
 	for (int i = 0; i < ButtonType::BUTTON_NUM; i++) {
 		button[i]->Draw();
 	}
