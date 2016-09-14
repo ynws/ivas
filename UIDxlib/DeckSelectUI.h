@@ -7,10 +7,9 @@ class DeckSelectUI :
 {
 private:
 	DeckSelect *deck_select;
-	Button* goto_title_button;
-	Button* goto_deck_edit_button;
-	Button* goto_battle_select_button;
-	Button* goto_online_button;
+
+	enum ButtonType {TITLE, DECK_EDIT, BATTLE_SELECT, ONLINE, BUTTON_NUM};
+	Button* button[BUTTON_NUM];
 public:
 	DeckSelectUI(DeckSelect* deck_select);
 	~DeckSelectUI();

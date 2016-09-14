@@ -7,8 +7,9 @@ class OnlineLobbyUI :
 {
 private:
 	OnlineLobby *online_lobby;
-	Button* goto_title_button;
-	Button* goto_deck_select_button;
+
+	enum ButtonType {TITLE, DECK_SELECT, BUTTON_NUM};
+	Button* button[BUTTON_NUM];
 public:
 	OnlineLobbyUI(OnlineLobby *online_lobby);
 	~OnlineLobbyUI();

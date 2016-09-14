@@ -3,35 +3,35 @@
 
 OfficeSelectUI::OfficeSelectUI(OfficeSelect * office_select) : GamePhaseUI("data\\bg\\office_select.jpg"), office_select(office_select)
 {
-	goto_title_button = new TextButton(1*16, 1*16, 14*16, 3*16, "TOPへ戻る", Color::P_BLUE, Color::WHITE);
-	goto_deck_select_button = new TextButton(1*16, 4*16, 14*16, 3*16, "デッキ選択", Color::P_BLUE, Color::WHITE);
-	goto_battle_select_button = new TextButton(4*16, 11*16, 10*16, 10*16, "Office選択(仮)", Color::P_BLUE, Color::WHITE);
+	button[ButtonType::TITLE] = new TextButton(1*16, 1*16, 14*16, 3*16, "TOPへ戻る", Color::P_BLUE, Color::WHITE);
+	button[ButtonType::DECK_SELECT] = new TextButton(1*16, 4*16, 14*16, 3*16, "デッキ選択", Color::P_BLUE, Color::WHITE);
+	button[ButtonType::BATTLE_SELECT] = new TextButton(4*16, 11*16, 10*16, 10*16, "Office選択(仮)", Color::P_BLUE, Color::WHITE);
 }
 
 OfficeSelectUI::~OfficeSelectUI()
 {
-	delete goto_title_button;
-	delete goto_deck_select_button;
-	delete goto_battle_select_button;
+	for (int i = 0; i < ButtonType::BUTTON_NUM; i++) {
+		delete button[i];
+	}
 }
 
 void OfficeSelectUI::Draw() const
 {
 	GamePhaseUI::Draw();
-	goto_title_button->Draw();
-	goto_deck_select_button->Draw();
-	goto_battle_select_button->Draw();
+	for (int i = 0; i < ButtonType::BUTTON_NUM; i++) {
+		button[i]->Draw();
+	}
 }
 
 void OfficeSelectUI::CheckInput() const
 {
-	if (goto_title_button->IsClick()) {
+	if (button[ButtonType::TITLE]->IsClick()) {
 		office_select->GotoMainTitle();
 	}
-	if (goto_deck_select_button->IsClick()) {
+	if (button[ButtonType::DECK_SELECT]->IsClick()) {
 		office_select->GotoDeckSelect();
 	}
-	if (goto_battle_select_button->IsClick()) {
+	if (button[ButtonType::BATTLE_SELECT]->IsClick()) {
 		office_select->GotoBattelSelect("test");
 	}
 }

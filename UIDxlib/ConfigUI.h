@@ -7,7 +7,9 @@ class ConfigUI :
 {
 private:
 	Config *config;
-	Button* goto_title_button;
+
+	enum ButtonType {TITLE, BUTTON_NUM};
+	Button* button[BUTTON_NUM];
 public:
 	ConfigUI(Config* config);
 	~ConfigUI();

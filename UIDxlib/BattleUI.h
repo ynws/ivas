@@ -7,7 +7,9 @@ class BattleUI :
 {
 private:
 	Battle *battle;
-	Button* goto_battle_select_button;
+
+	enum ButtonType {BATTLE_SELECT, BUTTON_NUM};
+	Button* button[BUTTON_NUM];
 public:
 	BattleUI(Battle *battle);
 	~BattleUI();

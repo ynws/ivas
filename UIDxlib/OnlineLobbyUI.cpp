@@ -3,25 +3,27 @@
 
 OnlineLobbyUI::OnlineLobbyUI(OnlineLobby * online_lobby) : GamePhaseUI("data\\bg\\online_lobby.jpg"), online_lobby(online_lobby)
 {
-	goto_title_button = new TextButton(54*16, 0, 10*16, 3*16, "TOP", Color::P_GREEN, Color::WHITE);
-	goto_deck_select_button = new TextButton(54*16, 3*16, 10*16, 3*16, "デッキ選択", Color::P_GREEN, Color::WHITE);
+	button[ButtonType::TITLE] = new TextButton(54*16, 0, 10*16, 3*16, "TOP", Color::P_GREEN, Color::WHITE);
+	button[ButtonType::DECK_SELECT] = new TextButton(54*16, 3*16, 10*16, 3*16, "デッキ選択", Color::P_GREEN, Color::WHITE);
 }
 
 OnlineLobbyUI::~OnlineLobbyUI()
 {
-	delete goto_title_button;
-	delete goto_deck_select_button;
+	for (int i = 0; i < ButtonType::BUTTON_NUM; i++) {
+		delete button[i];
+	}
 }
 
 void OnlineLobbyUI::Draw() const
 {
 	GamePhaseUI::Draw();
-	goto_title_button->Draw();
-	goto_deck_select_button->Draw();
+	for (int i = 0; i < ButtonType::BUTTON_NUM; i++) {
+		button[i]->Draw();
+	}
 }
 
 void OnlineLobbyUI::CheckInput() const
 {
-	if (goto_title_button->IsClick()) { online_lobby->GotoMainTitle(); }
-	if (goto_deck_select_button->IsClick()) { online_lobby->GotoDeckSelect(); }
+	if (button[ButtonType::TITLE]->IsClick()) { online_lobby->GotoMainTitle(); }
+	if (button[ButtonType::DECK_SELECT]->IsClick()) { online_lobby->GotoDeckSelect(); }
 }

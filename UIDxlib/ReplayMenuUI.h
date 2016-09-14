@@ -7,7 +7,9 @@ class ReplayMenuUI :
 {
 private:
 	ReplayMenu *replay_menu;
-	Button* goto_title_button;
+
+	enum ButtonType {TITLE, BUTTON_NUM};
+	Button* button[BUTTON_NUM];
 public:
 	ReplayMenuUI(ReplayMenu* replay_menu);
 	~ReplayMenuUI();

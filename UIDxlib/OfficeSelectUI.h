@@ -7,9 +7,9 @@ class OfficeSelectUI :
 {
 private:
 	OfficeSelect* office_select;
-	Button* goto_title_button;
-	Button* goto_deck_select_button;
-	Button* goto_battle_select_button;	// TODO: multi office
+
+	enum ButtonType {TITLE, DECK_SELECT, BATTLE_SELECT, BUTTON_NUM};
+	Button* button[BUTTON_NUM];
 public:
 	OfficeSelectUI(OfficeSelect* office_select);
 	~OfficeSelectUI();

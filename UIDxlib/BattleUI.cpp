@@ -3,23 +3,27 @@
 
 BattleUI::BattleUI(Battle * battle) : GamePhaseUI("data\\bg\\battle_back_ground.jpg"), battle(battle)
 {
-	goto_battle_select_button = new TextButton(55*16, 0, 9*16, 3*16, "対戦終了", Color::GRAY, Color::WHITE);
+	button[ButtonType::BATTLE_SELECT] = new TextButton(55*16, 0, 9*16, 3*16, "対戦終了", Color::GRAY, Color::WHITE);
 }
 
 BattleUI::~BattleUI()
 {
-	delete goto_battle_select_button;
+	for (int i = 0; i < ButtonType::BUTTON_NUM; i++) {
+		delete button[i];
+	}
 }
 
 void BattleUI::Draw() const
 {
 	GamePhaseUI::Draw();
-	goto_battle_select_button->Draw();
+	for (int i = 0; i < ButtonType::BUTTON_NUM; i++) {
+		button[i]->Draw();
+	}
 }
 
 void BattleUI::CheckInput() const
 {
-	if (goto_battle_select_button->IsClick()) {
+	if (button[ButtonType::BATTLE_SELECT]->IsClick()) {
 		battle->GotoBattleSelect();
 	}
 }

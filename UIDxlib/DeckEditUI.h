@@ -7,7 +7,9 @@ class DeckEditUI :
 {
 private:
 	DeckEdit *deck_edit;
-	Button* goto_deck_select_button;
+
+	enum ButtonType {DECK_SELECT, BUTTON_NUM};
+	Button* button[BUTTON_NUM];
 public:
 	DeckEditUI(DeckEdit *deck_edit);
 	~DeckEditUI();
