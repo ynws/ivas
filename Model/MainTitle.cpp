@@ -7,7 +7,6 @@
 #include "Config.h"
 #include "OnlineLobby.h"
 
-#include <string>
 #include <windows.h>
 #include <Shellapi.h>
 
@@ -49,6 +48,7 @@ void MainTitle::GotoConfig()
 
 void MainTitle::TweetForm()
 {
+	// TODO: 外だし(ヘッダも削除)
 	ShellExecute(GetDesktopWindow(), "open",
 		"https://twitter.com/intent/tweet?screen_name=IDOLVERSUS_PC",
 		"", "", SW_SHOW);

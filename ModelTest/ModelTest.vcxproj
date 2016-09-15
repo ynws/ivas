@@ -157,6 +157,7 @@
   <ItemGroup>
     <ClCompile Include="BattleSelectTest.cpp" />
     <ClCompile Include="BattleTest.cpp" />
+    <ClCompile Include="CardDataTest.cpp" />
     <ClCompile Include="ConfigTest.cpp" />
     <ClCompile Include="DeckEditTest.cpp" />
     <ClCompile Include="DeckSelectTest.cpp" />
@@ -171,6 +172,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="StringUtilityTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.vcxproj">

@@ -19,6 +19,18 @@
     <Filter Include="Source Files\GamePhase">
       <UniqueIdentifier>{6aa43532-fadb-4bde-a77e-a0153f3574f6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Card">
+      <UniqueIdentifier>{bbea4a37-082a-4190-845b-a9f0384301fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Card">
+      <UniqueIdentifier>{820e02c3-418b-48d3-b911-b63ebf1736f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tool">
+      <UniqueIdentifier>{0c2f0610-de38-4471-8219-1615d6191270}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tool">
+      <UniqueIdentifier>{425427f3-c5ff-4bc1-b095-45620c4f3ac3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -60,6 +72,15 @@
     <ClInclude Include="Battle.h">
       <Filter>Header Files\GamePhase</Filter>
     </ClInclude>
+    <ClInclude Include="CardData.h">
+      <Filter>Header Files\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="StringUtility.h">
+      <Filter>Header Files\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="CardEnum.h">
+      <Filter>Header Files\Card</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -95,8 +116,14 @@
     <ClCompile Include="OnlineLobby.cpp">
       <Filter>Source Files\GamePhase</Filter>
     </ClCompile>
+    <ClCompile Include="CardData.cpp">
+      <Filter>Source Files\Card</Filter>
+    </ClCompile>
     <ClCompile Include="Battle.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\GamePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUtility.cpp">
+      <Filter>Source Files\Tool</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

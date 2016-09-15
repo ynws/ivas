@@ -16,6 +16,12 @@
     <Filter Include="Source Files\GamePhaseTest">
       <UniqueIdentifier>{42a64ce4-1800-4e3b-9d32-d447d63585a6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Tool">
+      <UniqueIdentifier>{c0054988-9d83-4de0-a533-205d428f43ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Card">
+      <UniqueIdentifier>{e9b76c18-bcfe-4956-8338-ea439986ba9f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -58,6 +64,12 @@
     </ClCompile>
     <ClCompile Include="BattleTest.cpp">
       <Filter>Source Files\GamePhaseTest</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUtilityTest.cpp">
+      <Filter>Source Files\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="CardDataTest.cpp">
+      <Filter>Source Files\Card</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

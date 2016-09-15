@@ -132,6 +132,8 @@
   <ItemGroup>
     <ClInclude Include="Battle.h" />
     <ClInclude Include="BattleSelect.h" />
+    <ClInclude Include="CardData.h" />
+    <ClInclude Include="CardEnum.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="DeckEdit.h" />
     <ClInclude Include="DeckSelect.h" />
@@ -142,11 +144,13 @@
     <ClInclude Include="OnlineLobby.h" />
     <ClInclude Include="ReplayMenu.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StringUtility.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Battle.cpp" />
     <ClCompile Include="BattleSelect.cpp" />
+    <ClCompile Include="CardData.cpp" />
     <ClCompile Include="Config.cpp" />
     <ClCompile Include="DeckEdit.cpp" />
     <ClCompile Include="DeckSelect.cpp" />
@@ -162,6 +166,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="StringUtility.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
