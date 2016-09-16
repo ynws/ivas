@@ -1,5 +1,5 @@
 ﻿#include "stdafx.h"
-#include "..\Model\\CardData.h"
+#include "CardData.h"
 
 TEST(CardDataTest, constructor1) {
 	std::vector<std::string> arg;

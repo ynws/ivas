@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include "GamePhaseUI.h"
 #include "Button.h"
-#include "..\Model\Config.h"
+#include "Config.h"
 class ConfigUI :
 	public GamePhaseUI
 {

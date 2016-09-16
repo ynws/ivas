@@ -1,6 +1,6 @@
 ﻿#include "stdafx.h"
-#include "..\Model\\Game.h"
-#include "..\Model\\MainTitle.h"
+#include "Game.h"
+#include "MainTitle.h"
 
 TEST(GameTest, Initialize) {
 	std::unique_ptr<Game> game(new Game());

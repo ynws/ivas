@@ -1,7 +1,7 @@
 #pragma once
 #include "GamePhaseUI.h"
 #include "Button.h"
-#include "..\Model\Battle.h"
+#include "Battle.h"
 class BattleUI :
 	public GamePhaseUI
 {

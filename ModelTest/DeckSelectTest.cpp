@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "..\Model\\DeckSelect.h"
+#include "DeckSelect.h"
 
 TEST(DeckSelectTest, Initialize) {
 	std::unique_ptr<DeckSelect> deck_select(new DeckSelect());

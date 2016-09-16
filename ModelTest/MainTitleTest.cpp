@@ -1,5 +1,5 @@
 ﻿#include "stdafx.h"
-#include "..\Model\\MainTitle.h"
+#include "MainTitle.h"
 
 TEST(MainTitleTest, Initialize) {
 	std::unique_ptr<MainTitle> main_title(new MainTitle());

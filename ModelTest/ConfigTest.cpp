@@ -1,5 +1,5 @@
 ﻿#include "stdafx.h"
-#include "..\Model\\Config.h"
+#include "Config.h"
 
 TEST(ConfigTest, Initialize) {
 	std::unique_ptr<Config> config(new Config());

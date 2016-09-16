@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "..\Model\\OfficeSelect.h"
+#include "OfficeSelect.h"
 
 TEST(OfficeSelect, Initialize) {
 	std::unique_ptr<OfficeSelect> offce_select(new OfficeSelect());

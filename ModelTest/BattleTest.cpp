@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "..\Model\\Battle.h"
+#include "Battle.h"
 
 TEST(BattleTest, Initialize) {
 	std::unique_ptr<Battle> battle(new Battle());

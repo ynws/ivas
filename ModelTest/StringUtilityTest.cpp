@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "..\Model\\StringUtility.h"
+#include "StringUtility.h"
 
 TEST(StringUtilityTest, Split1) {
 	std::vector<std::string> data = StringUtility::SplitString("a,b,c");

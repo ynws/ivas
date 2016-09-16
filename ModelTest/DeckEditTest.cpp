@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "..\Model\\DeckEdit.h"
+#include "DeckEdit.h"
 
 TEST(DeckEditTest, Initialize) {
 	std::unique_ptr<DeckEdit> deck_edit(new DeckEdit("test"));

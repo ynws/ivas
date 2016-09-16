@@ -1,5 +1,5 @@
 ﻿#pragma once
-#include "..\Model\Game.h"
+#include "Game.h"
 #include "GamePhaseUI.h"
 class GameUI
 {

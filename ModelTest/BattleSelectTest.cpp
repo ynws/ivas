@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "..\Model\\BattleSelect.h"
+#include "BattleSelect.h"
 
 TEST(BattleSelect, Initialize) {
 	std::unique_ptr<BattleSelect> offce_select(new BattleSelect("test"));

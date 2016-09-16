@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "..\Model\\OnlineLobby.h"
+#include "OnlineLobby.h"
 
 TEST(OnlineLobbyTest, Initialize) {
 	std::unique_ptr<OnlineLobby> online_loby(new OnlineLobby());

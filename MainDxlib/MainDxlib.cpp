@@ -1,8 +1,8 @@
 ﻿#include "stdafx.h"
 #include "Resource.h"
 #include <memory>
-#include "..\UIDxlib\GameUI.h"
-#include "..\Model\Game.h"
+#include "Game.h"
+#include "GameUI.h"
 
 int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_opt_ HINSTANCE hPrevInstance,

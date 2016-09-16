@@ -5,7 +5,9 @@
 
 #pragma once
 
+#ifndef LINUX
 #include "targetver.h"
+#endif
 
 #include <memory>
 #include <gtest/gtest.h>

@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "..\Model\\ReplayMenu.h"
+#include "ReplayMenu.h"
 
 TEST(ReplayMenuTest, Initialize) {
 	std::unique_ptr<ReplayMenu> replay_menu(new ReplayMenu());

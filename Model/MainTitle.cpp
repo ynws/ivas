@@ -7,8 +7,10 @@
 #include "Config.h"
 #include "OnlineLobby.h"
 
+#ifndef LINUX
 #include <windows.h>
 #include <Shellapi.h>
+#endif
 
 MainTitle::MainTitle()
 {
@@ -48,8 +50,10 @@ void MainTitle::GotoConfig()
 
 void MainTitle::TweetForm()
 {
-	// TODO: 外だし(ヘッダも削除)
+	// TODO: Linuxでビルド・テストできるようにMock外だし(ヘッダも削除)
+#ifndef LINUX
 	ShellExecute(GetDesktopWindow(), "open",
 		"https://twitter.com/intent/tweet?screen_name=IDOLVERSUS_PC",
 		"", "", SW_SHOW);
+#endif
 }
