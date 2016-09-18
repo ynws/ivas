@@ -13,13 +13,13 @@ cd build
 echo "################################################################################"
 echo "## BUILD MODEL"
 echo "################################################################################"
-g++ -std=c++11 -O2 -fno-exceptions -W -Wall -c ../Model/*.cpp -DLINUX -fprofile-arcs -ftest-coverage
+g++ -std=c++11 -O -fno-exceptions -W -Wall -c ../Model/*.cpp -DLINUX -fprofile-arcs -ftest-coverage
 ar r libstatic.a *.o
 
 echo "################################################################################"
 echo "## BUILD TEST"
 echo "################################################################################"
-g++ -std=c++11 -O2 -fno-exceptions -W -Wall ../ModelTest/*.cpp -DLINUX -fprofile-arcs -ftest-coverage \
+g++ -std=c++11 -O -fno-exceptions -W -Wall ../ModelTest/*.cpp -DLINUX -fprofile-arcs -ftest-coverage \
     -I../Model libstatic.a \
     -I${GTEST}/googletest/include ${GTLIB}/libgtest.a ${GTLIB}/libgtest_main.a \
     -I${GTEST}/googlemock/include ${GMLIB}/libgmock.a ${GMLIB}/libgmock_main.a \

@@ -1,22 +1,14 @@
 #include "stdafx.h"
 #include "StringUtility.h"
+#include <sstream>
 
 std::vector<std::string> StringUtility::SplitString(const std::string line, const char delm)
 {
-	auto ret = std::vector<std::string>();
-
-	std::string::size_type pos = 0;
-	while (pos != std::string::npos) {
-		std::string::size_type p = line.find(delm, pos);
-
-		if (p == std::string::npos) {
-			ret.push_back(line.substr(pos));
-			break;
-		}
-		else {
-			ret.push_back(line.substr(pos, p - pos));
-		}
-		pos = p + 1;
+	std::vector<std::string> v;
+	std::stringstream ss(line);
+	std::string buffer;
+	while (std::getline(ss, buffer, delm)) {
+		v.push_back(buffer);
 	}
-	return ret;
+	return v;
 }
