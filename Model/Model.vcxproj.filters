@@ -31,6 +31,18 @@
     <Filter Include="Header Files\Tool">
       <UniqueIdentifier>{425427f3-c5ff-4bc1-b095-45620c4f3ac3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Player">
+      <UniqueIdentifier>{89f4dc19-e61a-4609-b917-7648d15e7c05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Player">
+      <UniqueIdentifier>{31b89f86-d559-4c0a-af26-25626e7f4c10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BattlePhase">
+      <UniqueIdentifier>{47065e8a-03e1-448c-9f93-0a914ed26720}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BattlePhase">
+      <UniqueIdentifier>{941bb7c5-9acf-4598-8505-1e5ee9c56967}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -81,6 +93,12 @@
     <ClInclude Include="CardEnum.h">
       <Filter>Header Files\Card</Filter>
     </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="BattlePhase.h">
+      <Filter>Header Files\BattlePhase</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -124,6 +142,12 @@
     </ClCompile>
     <ClCompile Include="StringUtility.cpp">
       <Filter>Source Files\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="BattlePhase.cpp">
+      <Filter>Source Files\BattlePhase</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
