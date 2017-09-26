@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "GamePhase.h"
 #include "MainTitle.h"
 

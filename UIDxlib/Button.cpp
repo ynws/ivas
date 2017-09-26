@@ -1,4 +1,4 @@
-﻿#include "stdafx.h"
+﻿#include "DxLib.h"
 #include "Button.h"
 #include "Mouse.h"
 #include "RoundRect.h"

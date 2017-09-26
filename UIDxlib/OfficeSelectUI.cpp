@@ -1,5 +1,4 @@
-﻿#include "stdafx.h"
-#include "OfficeSelectUI.h"
+﻿#include "OfficeSelectUI.h"
 
 OfficeSelectUI::OfficeSelectUI(OfficeSelect * office_select) : GamePhaseUI("data\\bg\\office_select.jpg"), office_select(office_select)
 {

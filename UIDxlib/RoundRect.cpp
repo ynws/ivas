@@ -1,9 +1,11 @@
-﻿#include "stdafx.h"
+﻿#define NOMINMAX	// windowsのmax, minマクロ無効化
 #include "RoundRect.h"
 #include "FontManager.h"
+#include "Dxlib.h"
+#include <algorithm>	// std::max, min
 
 void RoundRect::DrawRoundBox(int x, int y, int w, int h, Color col) {
-	int r = (int)(min(w, h) * 0.17 / 2);
+	int r = (int)(std::min(w, h) * 0.17 / 2);
 	DrawRoundRect(x, y, x + w, y + h, r, r, col, TRUE);
 }
 
@@ -16,7 +18,7 @@ void RoundRect::DrawRoundBoxWithFlame(int x, int y, int w, int h, Color col, int
 }
 
 void RoundRect::DrawLabelText(int x, int y, int w, int h, Color shadow_col, Color col, std::string text, bool center) {
-	int r = (int)(min(w, h) * 0.17 / 2);
+	int r = (int)(std::min(w, h) * 0.17 / 2);
 	int font_size = h - 4 * r;
 	int t_x = x + 2 * r;
 	int t_y = y + 2 * r;

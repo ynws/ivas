@@ -1,5 +1,4 @@
-﻿#include "stdafx.h"
-#include "MainTitle.h"
+﻿#include "MainTitle.h"
 
 #include "OfficeSelect.h"
 #include "DeckSelect.h"
@@ -8,8 +7,10 @@
 #include "OnlineLobby.h"
 
 #ifndef LINUX
+#ifndef __ANDROID__
 #include <windows.h>
 #include <Shellapi.h>
+#endif
 #endif
 
 MainTitle::MainTitle()
@@ -52,8 +53,10 @@ void MainTitle::TweetForm()
 {
 	// TODO: Linuxでビルド・テストできるようにMock外だし(ヘッダも削除)
 #ifndef LINUX
+#ifndef __ANDROID__
 	ShellExecute(GetDesktopWindow(), "open",
 		"https://twitter.com/intent/tweet?screen_name=IDOLVERSUS_PC",
 		"", "", SW_SHOW);
+#endif
 #endif
 }

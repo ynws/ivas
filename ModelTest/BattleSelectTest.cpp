@@ -1,4 +1,5 @@
-#include "stdafx.h"
+#include <gtest/gtest.h>
+#include <memory>
 #include "BattleSelect.h"
 
 TEST(BattleSelect, Initialize) {

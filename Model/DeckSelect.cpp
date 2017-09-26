@@ -1,5 +1,4 @@
-﻿#include "stdafx.h"
-#include "DeckSelect.h"
+﻿#include "DeckSelect.h"
 #include "DeckEdit.h"
 #include "OfficeSelect.h"
 #include "OnlineLobby.h"

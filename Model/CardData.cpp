@@ -1,6 +1,6 @@
-#include "stdafx.h"
 #include "CardData.h"
 #include "StringUtility.h"
+#include <stdlib.h>
 
 CardType atoCardType(std::string str) {
 	if (str == "I")return CardType::IDOL;

@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "ReplayMenu.h"
 #include "Battle.h"
 

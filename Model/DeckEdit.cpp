@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "DeckEdit.h"
 #include "DeckSelect.h"
 

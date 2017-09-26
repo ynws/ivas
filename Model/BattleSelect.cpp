@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "BattleSelect.h"
 #include "Battle.h"
 #include "DeckSelect.h"

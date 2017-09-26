@@ -1,4 +1,5 @@
-#include "stdafx.h"
+#include <gtest/gtest.h>
+#include <memory>
 #include "ReplayMenu.h"
 
 TEST(ReplayMenuTest, Initialize) {

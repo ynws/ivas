@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "StringUtility.h"
 #include <sstream>
 

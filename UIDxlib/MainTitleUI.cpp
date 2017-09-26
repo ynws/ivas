@@ -1,6 +1,6 @@
-﻿#include "stdafx.h"
-#include "MainTitleUI.h"
+﻿#include "MainTitleUI.h"
 #include "UIConst.h"
+#include "Dxlib.h"
 
 MainTitleUI::MainTitleUI(MainTitle* main_title) : GamePhaseUI("data\\bg\\main_title.jpg"), main_title(main_title)
 {

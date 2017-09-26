@@ -1,5 +1,4 @@
-﻿#include "stdafx.h"
-#include "ConfigUI.h"
+﻿#include "ConfigUI.h"
 
 ConfigUI::ConfigUI(Config* config) : GamePhaseUI("data\\bg\\main_title.jpg"), config(config)
 {

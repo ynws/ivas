@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include <gtest/gtest.h>
 #include "StringUtility.h"
 
 TEST(StringUtilityTest, Split1) {

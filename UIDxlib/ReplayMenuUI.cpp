@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "ReplayMenuUI.h"
 
 ReplayMenuUI::ReplayMenuUI(ReplayMenu * replay_menu) : GamePhaseUI("data\\bg\\main_title.jpg"), replay_menu(replay_menu)

@@ -1,5 +1,4 @@
-﻿#include "stdafx.h"
-#include "BattleUI.h"
+﻿#include "BattleUI.h"
 
 BattleUI::BattleUI(Battle * battle) : GamePhaseUI("data\\bg\\battle_back_ground.jpg"), battle(battle)
 {

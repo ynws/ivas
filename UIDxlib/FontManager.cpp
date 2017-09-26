@@ -1,5 +1,5 @@
-﻿#include "stdafx.h"
-#include "FontManager.h"
+﻿#include "FontManager.h"
+#include "Dxlib.h"
 
 FontManager::~FontManager() {
 	// font

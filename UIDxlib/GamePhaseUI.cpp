@@ -1,5 +1,5 @@
-﻿#include "stdafx.h"
-#include "GamePhaseUI.h"
+﻿#include "GamePhaseUI.h"
+#include "Dxlib.h"
 
 #include "MainTitle.h"
 #include "MainTitleUI.h"

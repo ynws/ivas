@@ -1,5 +1,4 @@
-﻿#include "stdafx.h"
-#include "OnlineLobbyUI.h"
+﻿#include "OnlineLobbyUI.h"
 
 OnlineLobbyUI::OnlineLobbyUI(OnlineLobby * online_lobby) : GamePhaseUI("data\\bg\\online_lobby.jpg"), online_lobby(online_lobby)
 {

@@ -1,5 +1,4 @@
-﻿#include "stdafx.h"
-#include "DeckSelectUI.h"
+﻿#include "DeckSelectUI.h"
 
 DeckSelectUI::DeckSelectUI(DeckSelect * deck_select) : GamePhaseUI("data\\bg\\deck_select.png"), deck_select(deck_select)
 {

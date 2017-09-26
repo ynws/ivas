@@ -1,4 +1,4 @@
-﻿#include "stdafx.h"
+﻿#include <gtest/gtest.h>
 #include "Game.h"
 #include "MainTitle.h"
 

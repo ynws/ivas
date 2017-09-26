@@ -1,5 +1,4 @@
-﻿#include "stdafx.h"
-#include "DeckEditUI.h"
+﻿#include "DeckEditUI.h"
 
 DeckEditUI::DeckEditUI(DeckEdit * deck_edit) : GamePhaseUI("data\\bg\\deck_edit.png"), deck_edit(deck_edit)
 {

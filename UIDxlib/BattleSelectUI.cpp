@@ -1,5 +1,4 @@
-﻿#include "stdafx.h"
-#include "BattleSelectUI.h"
+﻿#include "BattleSelectUI.h"
 
 BattleSelectUI::BattleSelectUI(BattleSelect * battle_select) : GamePhaseUI("data\\bg\\battle_select.jpg"), battle_select(battle_select)
 {

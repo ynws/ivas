@@ -1,4 +1,5 @@
-#include "stdafx.h"
+#include <gtest/gtest.h>
+#include <memory>
 #include "DeckEdit.h"
 
 TEST(DeckEditTest, Initialize) {

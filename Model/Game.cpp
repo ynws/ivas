@@ -1,5 +1,4 @@
-﻿#include "stdafx.h"
-#include "Game.h"
+﻿#include "Game.h"
 #include "MainTitle.h"
 
 Game::Game() : game_phase(new MainTitle())

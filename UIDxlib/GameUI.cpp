@@ -1,4 +1,4 @@
-﻿#include "stdafx.h"
+﻿#include "Dxlib.h"
 #include "GameUI.h"
 #include "Mouse.h"
 #include "UIConst.h"
@@ -6,7 +6,9 @@
 GameUI::GameUI()
 {
 	SetOutApplicationLogValidFlag(false);
+#ifndef __ANDROID__
 	ChangeWindowMode(true);
+#endif
 	SetGraphMode(DISPSIZE_X, DISPSIZE_Y, 16);
 	SetBackgroundColor(255, 255, 255);
 	SetAlwaysRunFlag(true);

@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "OnlineLobby.h"
 #include "DeckSelect.h"
 
